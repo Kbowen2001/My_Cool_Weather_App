@@ -30,6 +30,12 @@ li a:hover:not(.active) {
 .active { 
     background-color: #048caa;
  }
+
+ .topimage {
+    width: 3%;
+     height: auto;
+     align-self: flex-start;
+     }
 /*end nav*/
 
 /*background*/
