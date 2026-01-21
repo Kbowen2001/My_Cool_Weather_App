@@ -17,16 +17,29 @@
         </ul>
      </nav>
 
-     <h1>Latest Weather</h1>
-     <h2>Weather Summary</h2>
-     <h3>Tooele</h3>
-     <P>Currently: Mostly Sunny</P>
-     <P>Temprature: 38°F</P>
-     <P>Feels Like: 35°F</P>
-     <p>Humidity: 44%</p>
-     <p>Wind: SW 1 mph</p>
-
-     <img src="img/sunny.png" alt="Sunny" class="weatherIconLarge"/>
+<section class="weather-section">
+        <div class="page">
+          <h1>LATEST WEATHER</h1>
+          <div class="archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city"></h3>
+                  <p>Currently: Partly Cloudy <span id="current-desc"></span></p>
+                  <p>
+                    Tempature: 
+                    <span id="current-temp"></span> 41°F
+                  </p>
+                  <p>Wind Chill: <span id="current-windChill"></span> 41°F</p>
+                  <p>Humidity: <span id="current-humid"></span>41%</p>
+                  <p>Wind Speed: <span id="current-windSpeed"></span> 1 mph</p>
+                </div>
+              </section>
+              <div>
+                <img src="x" alt="Random Image" />
+              </div>
+            </article>
 
      <h2>5-Day Forecast</h2>
      <p>Tooele</p>
