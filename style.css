@@ -1,3 +1,4 @@
+/*nav*/
 a{
     color: #111;
 }
@@ -29,3 +30,15 @@ li a:hover:not(.active) {
 .active { 
     background-color: #048caa;
  }
+/*end nav*/
+
+/*body*/
+
+ body { 
+    background: rgb(197, 190, 190); 
+    color: #111; 
+    padding: 4em; 
+    font-family: sans-serif; line-height: 1.15;
+ }
+
+ /*end body*/
