@@ -32,10 +32,17 @@ li a:hover:not(.active) {
  }
 
  .topimage {
-    width: 3%;
+    width: 5%;
      height: auto;
      align-self: flex-start;
      }
+
+.navsection {
+    display: auto;
+     align-items: center;
+     gap: 10px;
+     padding-bottom: 10px;
+    }
 /*end nav*/
 
 /*background*/
