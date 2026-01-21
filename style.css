@@ -198,4 +198,11 @@ footer {
      font-weight: bold; 
      margin-bottom: 10px; 
     }
+
+.temp-data {
+     font-weight: bold;  
+     margin-top: 20px;
+    }
+
+
 /*end weather section*/
