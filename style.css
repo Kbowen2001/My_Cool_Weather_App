@@ -125,6 +125,7 @@ li a:hover:not(.active) {
     padding: 15px; margin-top: 15px;
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
       background-color: rgba(200, 200, 255, 0.3); 
+      text-align: center;
     } 
 
 .five-article { 
@@ -164,7 +165,7 @@ li a:hover:not(.active) {
 
 .weatherIcon { 
     display: flex;
-     margin-left: 0px; 
+     margin-left: 10px; 
      width: 30px; height: 30px;
      }
 
