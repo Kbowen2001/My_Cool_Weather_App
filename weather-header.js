@@ -1,10 +1,10 @@
 
-// Weather API URL with your API key
+
 const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?q=tooele&units=imperial&appid=82e3d3328f9517689972bb5805ece7a1";
 
 
 
-// Fetch weather data and update the DOM
+
 fetch(weatherApiUrl)
 	.then(response => {
 		if (!response.ok) {
@@ -12,14 +12,15 @@ fetch(weatherApiUrl)
 		}
 		return response.json();
 	})
+
+
 	.then(data => {
-		// Extract needed data
 		const description = data.weather[0].description;
 		const temp = Math.round(data.main.temp);
 		const humidity = data.main.humidity;
 		const windSpeed = data.wind.speed;
 
-		// Wind chill calculation (only if temp <= 50°F and wind speed > 3 mph)
+
 		let windChill = 'N/A';
 		if (temp <= 50 && windSpeed > 3) {
 			windChill = Math.round(
@@ -28,12 +29,12 @@ fetch(weatherApiUrl)
 			windChill = `${windChill}°F`;
 		}
 
-		// Update DOM elements
-		// Set only the description in the span (since 'Currently:' is outside)
 		const descElem = document.getElementById('current-desc');
 		if (descElem) {
 			descElem.textContent = description.charAt(0).toUpperCase() + description.slice(1);
 		}
+
+
 		const tempElem = document.getElementById('current-temp');
 		if (tempElem) tempElem.textContent = `${temp}°F`;
 		const humidElem = document.getElementById('current-humid');
