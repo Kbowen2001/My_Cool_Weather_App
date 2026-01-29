@@ -2,6 +2,7 @@
 // Weather API URL with your API key
 const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?q=tooele&units=imperial&appid=82e3d3328f9517689972bb5805ece7a1";
 
+
 // Fetch weather data and update the DOM
 fetch(weatherApiUrl)
 	.then(response => {
@@ -27,11 +28,19 @@ fetch(weatherApiUrl)
 		}
 
 		// Update DOM elements
-		document.getElementById('current-desc').textContent = description;
-		document.getElementById('current-temp').textContent = temp + '°F';
-		document.getElementById('current-humid').textContent = humidity + '%';
-		document.getElementById('current-windSpeed').textContent = windSpeed + ' mph';
-		document.getElementById('current-windChill').textContent = windChill;
+		// Set the full summary for the weather description
+		const descElem = document.getElementById('current-desc');
+		if (descElem) {
+			descElem.textContent = `Currently: ${description.charAt(0).toUpperCase() + description.slice(1)}`;
+		}
+		const tempElem = document.getElementById('current-temp');
+		if (tempElem) tempElem.textContent = `${temp}°F`;
+		const humidElem = document.getElementById('current-humid');
+		if (humidElem) humidElem.textContent = `${humidity}%`;
+		const windElem = document.getElementById('current-windSpeed');
+		if (windElem) windElem.textContent = `${windSpeed} mph`;
+		const chillElem = document.getElementById('current-windChill');
+		if (chillElem) chillElem.textContent = windChill;
 	})
 	.catch(error => {
 		console.error('Error fetching weather data:', error);
