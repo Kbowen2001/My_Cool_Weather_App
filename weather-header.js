@@ -3,11 +3,12 @@
 const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?q=tooele&units=imperial&appid=82e3d3328f9517689972bb5805ece7a1";
 
 
+
 // Fetch weather data and update the DOM
 fetch(weatherApiUrl)
 	.then(response => {
 		if (!response.ok) {
-			throw new Error('Network response was not ok');
+			throw new Error('error');
 		}
 		return response.json();
 	})
@@ -28,10 +29,10 @@ fetch(weatherApiUrl)
 		}
 
 		// Update DOM elements
-		// Set the full summary for the weather description
+		// Set only the description in the span (since 'Currently:' is outside)
 		const descElem = document.getElementById('current-desc');
 		if (descElem) {
-			descElem.textContent = `Currently: ${description.charAt(0).toUpperCase() + description.slice(1)}`;
+			descElem.textContent = description.charAt(0).toUpperCase() + description.slice(1);
 		}
 		const tempElem = document.getElementById('current-temp');
 		if (tempElem) tempElem.textContent = `${temp}°F`;
@@ -42,6 +43,4 @@ fetch(weatherApiUrl)
 		const chillElem = document.getElementById('current-windChill');
 		if (chillElem) chillElem.textContent = windChill;
 	})
-	.catch(error => {
-		console.error('Error fetching weather data:', error);
-	});
+
