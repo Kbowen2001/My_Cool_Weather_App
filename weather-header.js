@@ -3,16 +3,7 @@
 const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?q=tooele&units=imperial&appid=82e3d3328f9517689972bb5805ece7a1";
 
 
-
-
-fetch(weatherApiUrl)
-	.then(response => {
-		if (!response.ok) {
-			throw new Error('error');
-		}
-		return response.json();
-	})
-
+.then(response => response.json())
 
 	.then(data => {
 		const description = data.weather[0].description;
