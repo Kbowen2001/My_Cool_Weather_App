@@ -8,7 +8,7 @@ ul { max-width: 100%;
      margin: 0; 
      padding: 0; 
      overflow: hidden;
-      background-color: #cecece;
+      background-color: #e0d4f7;
     }
 
  li { 
@@ -24,12 +24,9 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #048caa;
+    background-color: #8904aa;
 }
 
-.active { 
-    background-color: #048caa;
- }
 
  .topimage {
     width: 100px;
@@ -48,7 +45,7 @@ li a:hover:not(.active) {
 /*background*/
 
  body { 
-    background: rgb(197, 190, 190); 
+    background: rgb(208, 171, 255); 
     color: #111; 
     padding: 4em; 
     font-family: sans-serif; line-height: 1.15;
@@ -71,7 +68,7 @@ li a:hover:not(.active) {
     grid-column: 1 / -1; 
     padding: 15px; margin-top: 15px;
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
-    background-color: rgba(200, 200, 255, 0.3); 
+    background-color: #e0d4f7; 
      text-align: center;
     } 
 
@@ -150,7 +147,7 @@ footer {
 
 .page { 
     padding: 2em;
-     background: #cecece; 
+     background: #efebf7; 
      max-width: 100%;
      }
 
@@ -164,7 +161,6 @@ footer {
 .article { 
     text-align: center; 
     padding: 1em;
-     background: rgba(200, 200, 255, 0.3);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
      }
 
@@ -172,7 +168,6 @@ footer {
     text-align: center;
      padding: 1em; 
      grid-column: 1 / 5;
-      background: rgba(200, 200, 255, 0.3); 
     }
 
 .temp-data-news {
