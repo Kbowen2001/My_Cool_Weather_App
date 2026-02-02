@@ -39,7 +39,16 @@ li a:hover:not(.active) {
     display: auto;
      align-items: center;
      gap: 10px;
-     padding-bottom: 10px;
+     padding-bottom: 20px;
+    }
+
+.abovenavword {
+    font-size: 30px;
+     font-weight: bold;
+     color: grey;
+     display: inline-block;
+     vertical-align: middle;
+     margin-left: 10px;
     }
 /*end nav*/
 
