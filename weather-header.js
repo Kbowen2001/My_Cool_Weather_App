@@ -37,3 +37,13 @@ fetch(weatherApiUrl)
 		if (chillElem) chillElem.textContent = windChill;
 	})
 
+
+	//NEWS SECTION//
+
+	const newsurl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=e55b5c6132c24adab029adc4b60bf621";
+
+	fetch(newsurl)
+		.then(response => response.json())
+		.then(newsData => {
+			const articles = newsData.articles;
+			const newsContainer = document.getElementById('news-container');
