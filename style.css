@@ -114,32 +114,15 @@ footer {
     text-align: center; 
 }
 
-#dayTitle1 {
-     font-weight: bold; 
-     margin-bottom: 10px; 
-    }
-
-#dayTitle2 {
-     font-weight: bold; 
-     margin-bottom: 10px; 
-    }
-
-#dayTitle3 {
-     font-weight: bold; 
-     margin-bottom: 10px; 
-    }
-
-#dayTitle4 {
-     font-weight: bold; 
-     margin-bottom: 10px; 
-    }
-
-#dayTitle5 {
+#dayTitle1, #dayTitle2, #dayTitle3, #dayTitle4, #dayTitle5,
+#newsTitle1, #newsTitle2, #newsTitle3, #newsTitle4 {
      font-weight: bold; 
      margin-bottom: 10px; 
     }
 
 .temp-data {
+     margin-left: 0px; 
+     display: flex;
      font-weight: bold;  
      margin-top: 20px;
     }
