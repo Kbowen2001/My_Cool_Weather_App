@@ -219,3 +219,10 @@ footer {
 
 
 /*end weather section*/
+
+/*news add*/
+.newsIcon { 
+    display: block;
+     margin-left: 0px; 
+     width: 200px; height: 200px;
+     }
