@@ -32,8 +32,8 @@ li a:hover:not(.active) {
  }
 
  .topimage {
-    width: 5%;
-     height: auto;
+    width: 100px;
+     height: 100px;
      align-self: flex-start;
      }
 
