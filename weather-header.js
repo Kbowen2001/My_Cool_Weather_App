@@ -55,7 +55,7 @@ fetch(weatherApiUrl)
 					<div class="main-article">
 						<h2>${mainArticle.title || 'No Title'}</h2>
 						<img src="${mainArticle.urlToImage || 'img/x'}" alt="News Image" style="max-width: 100%;" />
-						<p>${mainArticle.description || 'No description available'}</p>
+						<p>${mainArticle.description || 'no article description'}</p>
 						<a href="${mainArticle.url}" target="_blank">Read more</a>
 					</div>
 				`;
