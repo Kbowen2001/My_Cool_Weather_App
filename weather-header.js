@@ -37,3 +37,44 @@ fetch(weatherApiUrl)
 		if (chillElem) chillElem.textContent = windChill;
 	})
 
+
+	//NEWS SECTION//
+
+	const newsurl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=e55b5c6132c24adab029adc4b60bf621";
+
+	fetch(newsurl)
+		.then(response => response.json())
+		.then(newsData => {
+			const articles = newsData.articles;
+			const newsContainer = document.getElementById('news-container');
+			
+		
+			if (newsContainer && articles && articles.length > 0) {
+				const mainArticle = articles[0];
+				newsContainer.innerHTML = `
+					<div class="main-article">
+						<h2>${mainArticle.title || 'No Title'}</h2>
+						<img src="${mainArticle.urlToImage || 'img/x'}" alt="News Image" style="max-width: 100%;" />
+						<p>${mainArticle.description || 'no article description'}</p>
+						<a href="${mainArticle.url}" target="_blank">Read more</a>
+					</div>
+				`;
+			}
+			
+			
+			for (let i = 1; i <= 4 && i < articles.length; i++) {
+				const article = articles[i];
+				
+				const imageElem = document.getElementById(`newsImage${i}`);
+				const titleElem = document.getElementById(`newsTitle${i}`);
+				const descElem = document.getElementById(`newsDesc${i}`);
+				
+				if (titleElem) titleElem.textContent = article.title || `Article ${i}`;
+				if (imageElem && article.urlToImage) imageElem.src = article.urlToImage;
+				if (descElem) {
+					descElem.innerHTML = `<a href="${article.url}" target="_blank">${article.description || 'Read more'}</a>`;
+				}
+				
+			}
+		})
+	

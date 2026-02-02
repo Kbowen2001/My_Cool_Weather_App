@@ -4,17 +4,18 @@
    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Weather App</title>
+    <title>Weather</title>
 </head>
 <body>
     <header></header>
       <link rel="stylesheet" href="style.css">
 
 <section class="navsection">
-    <img src="img/snowy.jpg" alt="snowy" class="topimage"></a>
+    <img src="img/sitetop.png" alt="snowy" class="topimage"></a><p class="abovenavword" >WELCOME TO THE WEATHER</p>
+   
     <nav>
         <ul>    
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="weather.html">Weather</a></li>
             <li style="float: right"><a href="about.html">About</a></li>
@@ -26,6 +27,7 @@
 <section class="weather-section">
         <div class="page">
           <h1>LATEST WEATHER</h1>
+           <br class="breakline"/>
           <div class="archive">
             <article class="article">
               <section id="stats">
@@ -41,7 +43,7 @@
                   <p>Wind Speed: <span id="current-windSpeed"></span></p>
                 </div>
               </section>  
-              <div>
+              <div class="daywimage">
                 <img src="img/partlyCloudy.jpg" alt="Weather Image" class="daywimage" />
               </div>
             </article>
