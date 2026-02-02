@@ -25,6 +25,7 @@ li a {
 
 li a:hover:not(.active) {
     background-color: #8904aa;
+    color: white;
 }
 
 
@@ -147,16 +148,18 @@ footer {
 
 .page { 
     padding: 2em;
-     background: #efebf7; 
+     background: #e5d9fd; 
      max-width: 100%;
      }
 
 .archive { 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-     grid-gap: 1em; 
      grid-auto-flow: dense;
+    background-color: #e0d4f7;
      }
+
+
 
 .article { 
     text-align: center; 
