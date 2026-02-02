@@ -106,10 +106,7 @@ li a:hover:not(.active) {
      float: left; 
     }
 
-.temp-data {
-     margin-left: 0px; 
-     display: flex; 
-    }
+
 
 .weatherIcon { 
     display: block;
@@ -178,11 +175,12 @@ footer {
       background: rgba(200, 200, 255, 0.3); 
     }
 
-.day { 
-    color: #111;
-     max-width: 100px;
-      height: 125px; 
-      background-color: #048caa; 
+.temp-data-news {
+     margin-left: 0px; 
+     display: flex;
+     font-weight: normal;  
+     margin-top: 20px;
+     color:#333;
     }
 
 .article:nth-child(1) { 
@@ -217,3 +215,4 @@ footer {
 #homepagep {
     text-align: center;
      }
+
