@@ -40,7 +40,7 @@ fetch(weatherApiUrl)
 
 	//NEWS SECTION//
 
-	const newsurl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=e55b5c6132c24adab029adc4b60bf621xxxx";
+	const newsurl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=e55b5c6132c24adab029adc4b60bf621";
 
 	fetch(newsurl)
 		.then(response => response.json())
