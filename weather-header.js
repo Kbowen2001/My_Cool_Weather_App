@@ -71,7 +71,8 @@ fetch(weatherApiUrl)
 				
 				if (titleElem) titleElem.textContent = article.title || `Article ${i}`;
 				if (imageElem && article.urlToImage) imageElem.src = article.urlToImage;
-				if (descElem) descElem.textContent = article.description || 'No description available';
+				if (descElem) descElem.textContent = article.description || 'No description available' ;
+				
 			}
 		})
 	
